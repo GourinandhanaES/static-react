@@ -1,0 +1,78 @@
+.navbar {
+  position: absolute; 
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.scroll{
+  scroll-behavior: smooth;
+}
+
+.nav-links {
+  font-family: "Roboto Mono", serif;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #f8f1f1; 
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgb(218, 112, 26); 
+  color: white;
+}
+
+.nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Mobile menu icon */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

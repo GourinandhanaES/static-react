@@ -1,0 +1,66 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.home {
+  height: 100vh;
+  background-image: url('https://t4.ftcdn.net/jpg/03/50/81/89/360_F_350818949_lJTfzSTDr79e9Kn55PUVZjN19ct20uGc.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1{
+  color: white;
+  font-size: 80px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 200px;
+}
+
+.head{
+  font-family: "Open Sans", serif;
+  color: rgb(218, 112, 26);
+  font-size: 50px;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cta-button {
+  width: 170px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #ff5300;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-family: "Open Sans", serif;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 580px){
+  .cta-button{
+    margin-top: -60px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  .head{
+    font-size: 30px;
+  }
+}

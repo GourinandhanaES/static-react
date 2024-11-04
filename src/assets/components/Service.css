@@ -1,0 +1,141 @@
+.service{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: black;
+}
+.services-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: -20px;
+  color: #ff7300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  position: relative;
+  margin: 10px;
+  flex: 1 1 calc(30% - 20px);
+  max-width: calc(30% - 20px);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.service-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+.service-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(252, 93, 20, 0.733);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.heading{
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: "PT Sans Narrow", serif;
+}
+
+.heading1{
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: "PT Sans Narrow", serif;
+}
+
+.ser{
+  font-family: "PT Sans Narrow", serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f09952;
+}
+.vice{
+  color: rgb(245, 210, 146);
+}
+
+.serviceBtn{
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(235, 199, 133);
+  background-color: rgb(53, 51, 51);
+  cursor: pointer;
+}
+
+.serviceBtn:hover{
+  color: rgb(53, 51, 51);
+  background-color: #ff7300;
+}
+
+.service-card:hover .service-image {
+  filter: blur(5px);
+}
+
+.service-card:hover .service-info {
+  opacity: 1;
+}
+
+@media (max-width: 1230px){
+  .services-title{
+    font-size: 80px;
+  }
+  .heading{
+    font-size: 60px;
+  }
+  .heading1{
+    font-size: 40px;
+  }
+  .ser{
+    font-size: 20px;
+  }
+  .serviceBtn{
+    width: 100px;
+  }
+}
+
+@media (max-width: 706px){
+  .services-title{
+    font-size: 35px;
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
+  .service-card {
+    max-width:95%; 
+  }
+}
